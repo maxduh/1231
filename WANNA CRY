@@ -56,7 +56,7 @@ local function centerText(mode,coord,text)
 end
 
 local function virus()
-  local background, foreground = 0x0000AA, 0xCCCCCC
+  local background, foreground = 0xFF0000, 0xCCCCCC
   local xSize, ySize = boot_invoke(gpu, "getResolution")
   boot_invoke(gpu, "setBackground", background)
   boot_invoke(gpu, "fill", 1, 1, xSize, ySize, " ")
